@@ -9,19 +9,30 @@ import SwiftUI
 
 struct ListRowView: View {
     
-    let title: String
+    let item: ItemModel
     
     var body: some View {
         HStack {
-            Image(systemName: "checkmark.diamond")
-            Text(title)
+            Image(systemName: item.isComplete ? "checkmark.diamond" : "diamond")
+                .foregroundColor(item.isComplete ? .green : .orange)
+            Text(item.title)
             Spacer()
             
         }
+        .font(.title2)
+        .padding(.vertical, 8)
     }
 }
 struct ListRowView_Previews: PreviewProvider {
+    
+    static var item1 = ItemModel(title: "FirstItem!", isComplete: true)
+    static var item2 = ItemModel(title: "Second", isComplete: false)
+    
     static var previews: some View {
-        ListRowView(title: "This is the First list")
+        Group{
+            ListRowView(item: item1)
+            ListRowView(item: item2)
+            
+        }
     }
 }

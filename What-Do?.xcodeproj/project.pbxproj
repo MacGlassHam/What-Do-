@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF92B03E2B614CA200B53DA2 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF92B03D2B614CA200B53DA2 /* ListRowView.swift */; };
 		BF92B0402B614FB500B53DA2 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF92B03F2B614FB500B53DA2 /* AddView.swift */; };
+		BF92B0432B61598700B53DA2 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF92B0422B61598700B53DA2 /* ItemModel.swift */; };
+		BF92B0462B61661100B53DA2 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF92B0452B61661100B53DA2 /* ListViewModel.swift */; };
 		BFA676002B613F8200DBFC29 /* What_Do_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA675FF2B613F8200DBFC29 /* What_Do_App.swift */; };
 		BFA676042B613F8300DBFC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA676032B613F8300DBFC29 /* Assets.xcassets */; };
 		BFA676072B613F8300DBFC29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA676062B613F8300DBFC29 /* Preview Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		BF92B03D2B614CA200B53DA2 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		BF92B03F2B614FB500B53DA2 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		BF92B0422B61598700B53DA2 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		BF92B0452B61661100B53DA2 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		BFA675FC2B613F8200DBFC29 /* What-Do?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What-Do?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA675FF2B613F8200DBFC29 /* What_Do_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_Do_App.swift; sourceTree = "<group>"; };
 		BFA676032B613F8300DBFC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,8 +82,17 @@
 		BF92B0412B61575000B53DA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF92B0422B61598700B53DA2 /* ItemModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BF92B0442B6165F900B53DA2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BF92B0452B61661100B53DA2 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		BFA675F32B613F8200DBFC29 = {
@@ -105,6 +118,7 @@
 		BFA675FE2B613F8200DBFC29 /* What-Do? */ = {
 			isa = PBXGroup;
 			children = (
+				BF92B0442B6165F900B53DA2 /* ViewModels */,
 				BF92B0412B61575000B53DA2 /* Models */,
 				BFA676292B61457B00DBFC29 /* Views */,
 				BFA675FF2B613F8200DBFC29 /* What_Do_App.swift */,
@@ -279,7 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF92B0432B61598700B53DA2 /* ItemModel.swift in Sources */,
 				BF92B0402B614FB500B53DA2 /* AddView.swift in Sources */,
+				BF92B0462B61661100B53DA2 /* ListViewModel.swift in Sources */,
 				BFA676002B613F8200DBFC29 /* What_Do_App.swift in Sources */,
 				BFA6762B2B61459600DBFC29 /* ListView.swift in Sources */,
 				BF92B03E2B614CA200B53DA2 /* ListRowView.swift in Sources */,
